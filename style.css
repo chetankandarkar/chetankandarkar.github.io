@@ -660,7 +660,7 @@ footer span a:hover{
 @media (max-width: 947px){
     .menu-btn{
         display: block;
-        z-index: 999;
+        z-index: 777;
     }
     .menu-btn i.active:before{
         content: "\f00d";
