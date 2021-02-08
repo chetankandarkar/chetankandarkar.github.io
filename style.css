@@ -175,6 +175,10 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
+.scroll-up-btn .i
+{
+    color:white;
+}
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
@@ -516,9 +520,12 @@ color:rgba(255,255,255,0.50)
 }
 
 .overlay-text h1{
-	font-size: 25px;
+	line-height: 25px;
+    font-size: 16px;
     font-weight: 500;
-    margin: 10px 0 7px 0
+    font-family: "Poppins", sans-serif;
+    color: #111;
+    margin-bottom: 10px;
 }
 
 .overlay-text p{
@@ -557,40 +564,6 @@ color:rgba(255,255,255,0.50)
 }
 
 /* contact section styling */
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: #EE0000;
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    display:inline-block;
-    width:500px;
-    color: #333;
-}
 
 .contact .contact__container{
     position: relative;
@@ -620,6 +593,74 @@ color:rgba(255,255,255,0.50)
 	color:#EE0000;
     transition: all ease 0.5s;
 }
+
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.text-align{
+    margin-top: 1%;
+
+    padding: 5%;
+    margin-left: 5%;
+}
+.form-new{
+    font-size: 1.4rem;
+	text-align: center;
+    position: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.form-control
+{
+    position: center;
+    width: 50%;
+    padding: 1.5%;
+}
+
+
+.form-group
+{   width: :50%;
+    border-radius: 1rem;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: 1%;
+    text-align: center;
+    position: center; 
+}
+.register-heading {
+    padding: 0 0 20px 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.register{
+    background: -webkit-linear-gradient(left, #FFA500	,#ffc324);
+    margin-top: 3%;
+    padding: 3%;
+    border-radius: 2.5rem;
+    
+}
+.btnSubmit 
+{   
+    position: center;
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #EE0000;
+    border: none;
+    cursor: pointer;
+    color: rgb(246, 246, 252);
+    margin-top: 2%;
+    transition: all 0.3s ease;
+}
+
+.btn-block:hover{
+ background: green;
+ }
+ 
+
 
 /* footer section styling */
 footer{
