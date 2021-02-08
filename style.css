@@ -615,7 +615,7 @@ color:rgba(255,255,255,0.50)
 .form-control
 {
     position: center;
-    width: 50%;
+    width: 60%;
     padding: 1.5%;
 }
 
@@ -644,7 +644,7 @@ color:rgba(255,255,255,0.50)
 .btnSubmit 
 {   
     position: center;
-    width: 50%;
+    width: 60%;
     border-radius: 1rem;
     padding: 1.5%;
     color: #fff;
