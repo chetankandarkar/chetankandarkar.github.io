@@ -151,7 +151,7 @@ section .title::after{
 
 
 .navbar .menu li a:hover{
-    color: #EE0000;
+    color: #FFEC5D;
 }
 .navbar.sticky .menu li a:hover{
     color: #FFEC5D;
@@ -160,6 +160,8 @@ section .title::after{
 /* menu btn styling */
 .menu-btn{
     color: #fff;
+    background-color: #EE0000;
+    padding: 10px;
     font-size: 23px;
     cursor: pointer;
     display: none;
