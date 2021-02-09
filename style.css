@@ -121,8 +121,7 @@ section .title::after{
     font-weight: 600;
 }
 
-.navbar .logo img
-{
+.navbar .logo img{
     border-radius: 50%;
     border-style: solid;
     border-color:#ffc324;
