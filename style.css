@@ -123,11 +123,9 @@ section .title::after{
 
 .navbar .logo img
 {
-    size: 35px
     border-radius: 50%;
     border-style: solid;
     border-color:#ffc324;
-    
 }
 
 .navbar .logo a span{
