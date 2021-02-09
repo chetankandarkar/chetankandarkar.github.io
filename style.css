@@ -120,6 +120,7 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
+
 .navbar .logo img
 {
     border-radius: 50%;
@@ -166,7 +167,6 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-
 .scroll-up-btn{
     position: fixed;
     height: 45px;
