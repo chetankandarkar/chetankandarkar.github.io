@@ -648,9 +648,9 @@ color:rgba(255,255,255,0.50)
 }
 .register{
     background: -webkit-linear-gradient(left, #FFA500	,#ffc324);
-    margin-top: 3%;
-    padding: 3%;
-    border-radius: 2.5rem;
+    margin-top: 4%;
+    padding: 4%;
+    border-radius: 1rem;
     
 }
 .btnSubmit 
