@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chetan Kandarkar</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/logo.png" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -250,18 +250,21 @@
                     <div class="col-md-12">
                                 <div class="row register-form">
                                     <div class="col-md-12">
-                                        <form method="post" autocomplete="off" name="google-sheet">
+                                        <form action="javascript:sendmail()" method="post">
                                             <div class="form-group">
-                                                <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                                <input type="text" name="Name" id="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                                <input type="email" name="Email" id="Email"class="form-control" placeholder="Your Email *" value="" required=""/>
                                             </div>
                                             <div class="form-group">
-                                                <textarea name="Message" class="form-control"  placeholder="Enter Message Here*" rows="6" value="" required=""></textarea>
+                                                <input type="text" name="Subject" id="Subject" class="form-control" placeholder="Subject*" value="" required=""/>
                                             </div>
                                             <div class="form-group">
-                                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" onClick="clearField()"/>
+                                                <textarea name="Message" id="Message" class="form-control"  placeholder="Enter Message Here*" rows="4" value="" required=""></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit"/>
                                             </div>
                                         </form>
                                     </div>
@@ -271,20 +274,54 @@
                 </div>
             </div>
               
-              <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwqK6ju3mCz5z-s2LShvQ_TveVTQXZgWsBnBm7oCw259AC6PVRGc5ofdA/exec'
-                const form = document.forms['google-sheet']
+            <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+           
+          <script>  
+          
+               function sendmail(){
               
-                form.addEventListener('submit', e => {
-                  e.preventDefault()
-                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => alert("Thanks for Message..! Chetan Will Contact You Soon..."))
-                    .catch(error => console.error('Error!', error.message))
-                })
-                
-            
-                
+                      var name = $('#Name').val();
+                      var email = $('#Email').val();
+                      var subject = $('#Subject').val();
+                var message = $('#Message').val();
+          
+                      // var body = $('#body').val();
+          
+                      var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+                      //console.log(name, phone, email, message);
+          
+                      Email.send({
+                  SecureToken:"da8cde70-f23b-458c-823d-6592887330a6",
+                          To: 'chetan.kandarkar99@gmail.com',
+                          From: "contactchetan4@gmail.com",
+                          Subject: "New message on contact from "+name,
+                          Body: Body
+                      }).then(
+                          message =>{
+                              //console.log (message);
+                              if(message=='OK'){
+                              alert('Your Message has been Send. Thank you for connecting.');
+                              }
+                              else{
+                                  console.error (message);
+                                  alert('There is error at sending message. ')
+                                  
+                              }
+          
+                          }
+                      );
+          
+          
+          
+                  }
+          
+          
               </script>
+           </script>
     
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
