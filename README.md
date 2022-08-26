@@ -1,4 +1,4 @@
 # chetankandarkar.github.io
-My Personal Website
+Website
 
 [https://chetankandarkar.github.io](https://chetankandarkar.github.io)
