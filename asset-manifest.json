@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5100f583.css",
+    "main.js": "/static/js/main.4b6f31ba.js",
+    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/movie.png": "/static/media/movie.03b7858ad31665b0021f.png",
+    "static/media/sbm.png": "/static/media/sbm.1a149618833fe3d35f28.png",
+    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/Chetan_Kandarkar_Resume.pdf": "/static/media/Chetan_Kandarkar_Resume.8e352f2e1be6056543d4.pdf",
+    "static/media/logo.png": "/static/media/logo.364bd30842c8755489ac.png",
+    "static/media/avatar.svg": "/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/index.html",
+    "main.5100f583.css.map": "/static/css/main.5100f583.css.map",
+    "main.4b6f31ba.js.map": "/static/js/main.4b6f31ba.js.map",
+    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5100f583.css",
+    "static/js/main.4b6f31ba.js"
+  ]
+}
